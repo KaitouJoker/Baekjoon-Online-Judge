@@ -1,0 +1,1 @@
+while (p:=input()) != 'END': print(p[::-1])

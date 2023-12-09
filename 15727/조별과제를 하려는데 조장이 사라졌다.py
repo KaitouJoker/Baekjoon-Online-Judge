@@ -1,0 +1,1 @@
+print(y+1 if(n:=int(input())/5)>(y:=int(n))else y)

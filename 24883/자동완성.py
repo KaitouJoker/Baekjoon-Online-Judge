@@ -1,0 +1,1 @@
+print(f"Naver {'D2' if input().lower() == 'n' else 'Whale'}")

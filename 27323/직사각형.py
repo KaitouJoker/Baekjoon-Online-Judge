@@ -1,0 +1,1 @@
+print((lambda x, y: x * y)(*[int(input()) for _ in range(2)]))

@@ -1,0 +1,1 @@
+while (s:=input().lower()) != '#': print(sum(map(s.count, 'aeiou')))

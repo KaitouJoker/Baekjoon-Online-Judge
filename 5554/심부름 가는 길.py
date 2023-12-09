@@ -1,0 +1,1 @@
+print((T:=sum([int(input())for _ in range(4)]))//60,T%60,sep='\n')

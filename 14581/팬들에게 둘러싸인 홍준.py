@@ -1,0 +1,1 @@
+print((a:=':fan:')*3,a+f':{input()}:'+a,a*3)

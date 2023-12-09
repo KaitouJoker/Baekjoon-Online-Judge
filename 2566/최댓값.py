@@ -1,0 +1,5 @@
+la = sum([list(map(int, input().split())) for _ in range(9)], [])
+ma = max(la)
+mai = la.index(ma)
+print(ma)
+print((mai) // 9 + 1, (mai) % 9 + 1)
