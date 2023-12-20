@@ -3,9 +3,11 @@ read = lambda : map(int, input().split())
 A, B = read()
 K, X = read()
 
+def set_range(s:int, e:int) -> set: return set(range(s, e + 1))
+
 if A - X <= K and K <= B + X:
-    AB = set(range(A, B + 1))
-    KX = set(range(K - X, K + X + 1))
+    AB = set_range(A, B)
+    KX = set_range(K - X, K + X)
     p(len(AB.intersection(KX)))
     
 else: p('IMPOSSIBLE')
