@@ -1,10 +1,14 @@
-p = print
-A, B = map(int, input().split())
-K, X = map(int, input().split())
+p    = print
+read = lambda : map(int, input().split())
+A, B = read()
+K, X = read()
 
-if A <= K <= B:
+if A - X <= K and K <= B + X:
     AB = set(range(A, B + 1))
     KX = set(range(K - X, K + X + 1))
     p(len(AB.intersection(KX)))
     
 else: p('IMPOSSIBLE')
+
+# 2 4
+# 1 1
