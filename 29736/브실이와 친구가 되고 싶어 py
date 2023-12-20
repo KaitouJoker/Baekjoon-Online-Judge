@@ -12,5 +12,6 @@ if A - X <= K and K <= B + X:
     
 else: p('IMPOSSIBLE')
 
+# 반례
 # 2 4
 # 1 1
