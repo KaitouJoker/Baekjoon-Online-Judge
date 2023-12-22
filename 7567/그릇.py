@@ -1,5 +1,5 @@
-height = 0
-c = 0
+height:int = 0
+c     :int = 0
 for bowl in input():
     if c > 0:
         if bowl != last_bowl: height += 10
