@@ -1,6 +1,6 @@
 from sys import stdin as dn
 
-def pytha(abc:list[int]):
+def pytha(abc:list[int]) -> str:
     c = abc.pop(abc.index(max(abc)))
     a, b = abc
     if pow(a, 2) + pow(b, 2) == pow(c, 2):
@@ -8,11 +8,9 @@ def pytha(abc:list[int]):
     else: return 'wrong'
 
 while 1:
-    abc = list(map(int, dn.readline().split()))
-    if sum(abc) == 0:
-        break
-    else:
-        print(pytha(abc))
+    abc:list[int] = list(map(int, dn.readline().split()))
+    if sum(abc) == 0: break
+    else            : print(pytha(abc))
 
 """ 
 from sys import stdin

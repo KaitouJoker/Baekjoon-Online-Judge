@@ -1,7 +1,7 @@
-d=lambda n:n+sum(list(map(int,list(str(n)))))
+d = lambda n : n + sum(map(int, list(str(n))))
 
-a = {*range(1, 10001)}
-x = {d(i) for i in range(1, 10_001)}
+a:set[int] = {*range(1, 10_001)}
+x:set[int] = {d(i) for i in range(1, 10_001)}
 
 print(*sorted(a - x), sep='\n')
 
