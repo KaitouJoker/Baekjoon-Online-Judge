@@ -1,4 +1,4 @@
-def is_prime(n):
+def is_prime(n: int):
     if n == 1:
         return False
     for i in range(2, n):
@@ -7,9 +7,6 @@ def is_prime(n):
     return True
 p = []
 for j in range(int(input()), int(input()) + 1):
-    if is_prime(j):
-        p.append(j)
-if p != []:
-    print(f'{sum(p)}\n{min(p)}')
-else:
-    print(-1)
+    if is_prime(j): p.append(j)
+if p != []: print(f'{sum(p)}\n{min(p)}')
+else      : print(-1)
