@@ -1,1 +1,1 @@
-print(min((m:=[int(input())for _ in range(5)])[:3])+min(m[3:])-50)
+print(min((m:= [int(input()) for _ in range(5)])[:3]) + min(m[3:]) - 50)

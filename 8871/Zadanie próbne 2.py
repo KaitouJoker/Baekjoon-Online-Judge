@@ -1,1 +1,1 @@
-print((n:=int(input())+1)*2,n*3)
+print((n:= int(input()) + 1) * 2, n * 3)

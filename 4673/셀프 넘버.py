@@ -1,4 +1,6 @@
-d = lambda n : n + sum(map(int, list(str(n))))
+from typing import Callable
+
+d:Callable[[int], int] = lambda n : n + sum(map(int, list(str(n))))
 
 a:set[int] = {*range(1, 10_001)}
 x:set[int] = {d(i) for i in range(1, 10_001)}

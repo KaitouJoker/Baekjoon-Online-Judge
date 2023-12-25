@@ -1,7 +1,7 @@
-from typing import Final
-cmd:Final = {'@' : lambda x : x * 3,
-             '%' : lambda x : x + 5,
-             '#' : lambda x : x - 7}
+from typing import Callable
+cmd:dict[str, Callable[[float], float]] = {'@' : lambda x : x * 3,
+                                           '%' : lambda x : x + 5,
+                                           '#' : lambda x : x - 7}
 for _ in range(int(input())):
     n, *cm = input().split()
     n:float = float(n)
