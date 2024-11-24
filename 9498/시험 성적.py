@@ -1,9 +1,12 @@
-from typing import Callable
-p:Callable[..., None] = print
-t:int = int(input())
+t = int(input())
 
-if   t >= 90: p("A")
-elif t >= 80: p("B")
-elif t >= 70: p("C")
-elif t >= 60: p("D")
-else        : p("F")
+if t >= 90:
+    print("A")
+elif t >= 80:
+    print("B")
+elif t >= 70:
+    print("C")
+elif t >= 60:
+    print("D")
+else:
+    print("F")

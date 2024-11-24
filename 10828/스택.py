@@ -6,9 +6,9 @@ def push(n):
     global stack
     stack.append(n[0])
 
-size  = lambda x = None : len(stack)
+size = lambda x = None : len(stack)
 empty = lambda x = None : 1 if len(stack) == 0 else 0
-top   = lambda x = None : -1 if len(stack) == 0 else stack[-1]
+top = lambda x = None : -1 if len(stack) == 0 else stack[-1]
 
 def pop(x = None):
     global stack

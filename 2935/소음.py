@@ -1,3 +1,2 @@
-from typing import Callable
-i:Callable[[], str] = input
+i=input
 print(eval(i() + i() + i()))

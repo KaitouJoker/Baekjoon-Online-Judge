@@ -1,7 +1,7 @@
 start, end = map(int, input().split())
-arr:list[int] = []
-c  :int       = 1
-cc :int       = 1
+arr = []
+c = 1
+cc = c
 for _ in range(end):
     if cc == 0:
         c += 1

@@ -1,5 +1,6 @@
 for i in range(int(input())):
     n, s = input().split()
-    r:str = ''
-    for l in s: r += l * int(n)
+    r = ''
+    for l in s:
+        r += l * int(n)
     print(r)

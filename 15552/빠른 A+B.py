@@ -1,5 +1,5 @@
-from sys import stdin as sn
+import sys
 
 for i in range(int(input())):
-    t = list(map(int, sn.readline().split()))
+    t = list(map(int, sys.stdin.readline().split()))
     print(sum(t))

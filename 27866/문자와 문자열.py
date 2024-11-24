@@ -1,0 +1,1 @@
+print((S := list(input()))[int(input()) - 1])

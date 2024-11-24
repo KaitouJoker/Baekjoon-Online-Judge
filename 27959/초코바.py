@@ -1,0 +1,1 @@
+print(['No', 'Yes'][(a := list(map(int, input().split())))[0] * 100 >= a[1]])

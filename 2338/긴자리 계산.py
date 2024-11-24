@@ -1,8 +1,2 @@
-from typing import Callable
-
-i:Callable[[], int] = lambda: int(input())
-
-a:int = i()
-b:int = i()
-
+a, b = int(input()), int(input())
 print(a + b, a - b, a * b, sep='\n')

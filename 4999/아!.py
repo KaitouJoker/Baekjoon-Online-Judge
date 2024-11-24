@@ -1,2 +1,1 @@
-i = input
-print('gn'[i() > i()] + 'o')
+i=input;print('gn'[i()>i()]+'o')

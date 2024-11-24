@@ -1,7 +1,7 @@
 from sys import stdin
-d = stdin.readline
+d=stdin.readline
 
-word_list: list[int] = sorted(set([d().rstrip() for _ in range(int(d().rstrip()))]), key = lambda x : (len(x), x))
+word_list = sorted(set([d().rstrip() for _ in range(int(d().rstrip()))]), key = lambda x : (len(x), x))
 
 print(*word_list, sep='\n')
 

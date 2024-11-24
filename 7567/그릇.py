@@ -1,11 +1,11 @@
-height:int = 0
-c     :int = 0
+height = 0
+c = 0
 for bowl in input():
     if c > 0:
         if bowl != last_bowl: height += 10
-        else                : height += 5
+        else: height += 5
     else:
-        c      += 1
+        c += 1
         height += 10
-    last_bowl:str = bowl
+    last_bowl = bowl
 print(height)

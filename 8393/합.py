@@ -1,3 +1,3 @@
-t:int = int(input())
+t = int(input())
 
-print(int((t * (t + 1)) / 2))
+print(int((t * (t+1))/2))

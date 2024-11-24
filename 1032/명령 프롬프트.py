@@ -24,8 +24,7 @@ else     : p(gen(list(set([i() for _ in range(n)]))))
 from sys import stdin as dn
 
 i = dn.readline
-item:list[str] = [i().rstrip() for _ in range(int(i()))]
-text:str       = ''
+item, text = [i().rstrip() for _ in range(int(i()))], ''
 
 for i in zip(*item):
     if len(S:= set(i)) > 1: text += '?'
