@@ -7,5 +7,4 @@ for i in range(m):
     l1.append(a)
     l1.append(b)
 
-print(l1)
-# for i in range(1, n + 1): print(l1.count(i))
+for i in range(1, n + 1): print(l1.count(i))
