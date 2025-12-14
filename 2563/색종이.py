@@ -1,6 +1,6 @@
 from sys import stdin as dn
 i = dn.readline
-page = [[0] * 100 for _ in range(100)]
+page = [[0] * 1_000 for _ in range(1_000)]
 
 def confetti(x1:int, y1:int):
     global page
